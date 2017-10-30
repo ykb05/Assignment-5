@@ -1,3 +1,10 @@
+
+
+$( document ).ready(function() {
+
+});
+
+
 function submit(){
 
   event.preventDefault();
@@ -11,15 +18,15 @@ function submit(){
 
  
 	if (city == "nyc" || city == "new york" || city == "new york city") {
-		$('body').addClass('nyc');
+		$('body').attr('class', 'nyc');
 	}
 	// // if user submits "San Francisco" or "SF" or "Bay Area" make the background of the page sf.jpg
 	if (city == "san francisco" || city == "sf" || city == "bay area") {
-		$('body').addClass('sf');
+		$('body').attr('class','sf');
 	}
 	// // if use submits "Los Angeles" or "LA" or "LAX" make the background of the page la.jpg
 	if (city == "los angeles" || city == "la" || city == "lax") {
-		$('body').addClass('la');
+		$('body').attr('class', 'la');
 	}
 	// // if user submits "Austin" or "ATX" make the background of the page austin.jpg
 	if (city == "austin" || city == "atx") {
